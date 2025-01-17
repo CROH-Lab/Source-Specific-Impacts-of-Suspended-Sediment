@@ -1,0 +1,32 @@
+---
+title: "Heavy metals results for FDEP Year 2 _Orbicella faveolata_ turbidity experiments."
+output: html_document
+date: "2025-01-17"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library("tidyverse")
+```
+
+## Loading the data
+
+
+```{r Heavy Metals, echo = TRUE}
+FDEP_metals <- read.csv("~/Desktop/FDEP_Metals.csv")
+
+FDEP_metals$Sample <- factor(FDEP_metals$Sample, levels = c("3N_init", "3N_final", "DCC_init", "DCC_final"))
+#rearranging the factor levels for better graphing
+```
+
+## Comparison of relative metals concentrations
+
+
+```{r Heavy metal concentrations, echo=FALSE}
+ggplot(FDEP_metals, aes(x = Element.Isoptope, y = Concentration, fill = Sample)) + 
+  geom_col(position = position_dodge()) + 
+  geom_errorbar(aes(ymin = Concentration - X.Error, ymax = Concentration + X.Error), width = 0.2, position=position_dodge(0.9)) +
+  ylab("Concentration (ug/g)") +
+  facet_wrap(~Site)
+```
+
