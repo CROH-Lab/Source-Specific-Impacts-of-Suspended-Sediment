@@ -1,4 +1,4 @@
-﻿Date,Experiment,Treatment,Chamber,Coral Genotype,Coral ID,PAM (Fv/Fm),Buoyant Weight (g),Wet weight (g),Coral Volume (mL),Density (kg/L),Resp Volume (mL),Resp Mass (g),Photo
+﻿Date,Experiment,Chamber,Treatment,Coral Genotype,Coral ID,PAM (Fv/Fm),Buoyant Weight (g),Wet weight (g),Coral Volume (mL),Density (kg/L),Resp Volume (mL),Resp Mass (g),Photo
 2/3/25,Trial 1-PRE,3,P15,69,OFAV_69.1,0.748,10.57,21.695,10,1.057,630,647,YES
 2/3/25,Trial 1-PRE,3,P15,69,OFAV_69.1,0.742,10.58,32.688,8,1.3225,630,647,YES
 2/3/25,Trial 1-PRE,3,P15,69,OFAV_69.1,0.718,10.57,32.686,10,1.057,630,647,YES
